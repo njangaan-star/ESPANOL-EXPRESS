@@ -1,0 +1,333 @@
+DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Español Express - Cours d'espagnol propulsés par l'IA</title>
+    <style>
+        :root {
+            --primary-color: #d97706; /* Jaune/Orange Espagnol */
+            --secondary-color: #b91c1c; /* Rouge Espagnol */
+            --dark-color: #1f2937;
+            --light-color: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .owner {
+            font-size: 0.95rem;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 0.6rem 1.2rem;
+            display: inline-block;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 2.5rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .level-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ai-banner {
+            background: white;
+            border-radius: 8px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+            border-left: 6px solid var(--primary-color);
+        }
+
+        .ai-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .ai-feature-box {
+            background: #f3f4f6;
+            padding: 1.2rem;
+            border-radius: 6px;
+        }
+
+        .pricing-box {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+
+        .payment-card {
+            background: #f3f4f6;
+            padding: 1rem;
+            border-radius: 6px;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #991b1b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark-color);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Español Express</h1>
+        <p>"Tu pasaporte al éxito: del colegio al Master en español."</p>
+        <div class="owner">Propriétaire : Serigne Mbaye Anta CISSE</div>
+    </header>
+
+    <!-- Niveaux proposés -->
+    <section>
+        <h2>📚 Niveaux Disponibles (4ème au Master)</h2>
+        <div class="levels-grid">
+            <div class="level-card">
+                <h3>4ème & 3ème</h3>
+                <p>Bases solides, grammaire, vocabulaire et expression écrite/orale débutante.</p>
+            </div>
+            <div class="level-card">
+                <h3>Lycée (2nde - Term)</h3>
+                <p>Textes littéraires, argumentation, civilisation et préparation aux examens.</p>
+            </div>
+            <div class="level-card">
+                <h3>Licence (Bachelor)</h3>
+                <p>Linguistique hispanique, traduction, littérature classique et moderne.</p>
+            </div>
+            <div class="level-card">
+                <h3>Master</h3>
+                <p>Recherche universitaire, analyse critique avancée et espagnol professionnel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Professeur IA et Formats de cours -->
+    <section>
+        <h2>🤖 Un Enseignement Intelligent 24h/24</h2>
+        <div class="ai-banner">
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem;">
+                Sur <strong>Español Express</strong>, c'est l'Intelligence Artificielle qui dispense les cours, interagit avec les élèves et étudiants, et corrige les exercices en temps réel.
+            </p>
+            <div class="ai-features">
+                <div class="ai-feature-box">
+                    <strong>📄 Cours & Documentation Textuels</strong>
+                    <p>Fiches de cours détaillées, règles de grammaire et exercices adaptés à chaque niveau.</p>
+                </div>
+                <div class="ai-feature-box">
+                    <strong>🎥 Formats Vidéo & Multimédia</strong>
+                    <p>Supports visuels et explications dynamiques pour assimiler facilement la langue.</p>
+                </div>
+                <div class="ai-feature-box">
+                    <strong>✍️ Corrections Personnalisées</strong>
+                    <p>L'IA analyse vos exercices et rédactions pour vous corriger instantanément et vous expliquer vos erreurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs et Paiements -->
+    <section>
+        <h2>💳 Tarifs & Moyens de Paiement</h2>
+        <div class="pricing-box">
+            <p>Accès illimité à toute la documentation, aux exercices et au tuteur IA pour tous les niveaux.</p>
+            <div class="price">2.000 FCFA <span style="font-size: 1rem; color: var(--dark-color);">/ mois</span></div>
+            
+            <div class="payment-methods">
+                <div class="payment-card">
+                    <strong>📱 Orange Money</strong>
+                    <p>Numéro : <strong>+221 77 447 45 83</strong></p>
+                </div>
+                <div class="payment-card">
+                    <strong>📲 Wave</strong>
+                    <p>Numéro : <strong>+221 76 511 88 11</strong></p>
+                </div>
+                <div class="payment-card">
+                    <strong>💳 Carte Bancaire</strong>
+                    <p>Paiement sécurisé en ligne disponible directement sur la plateforme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fiche d'inscription connectée à votre Formspree -->
+    <section>
+        <h2>📝 Fiche d'Inscription en Ligne</h2>
+        <form action="https://formspree.io/f/xzebldjl" method="POST">
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+            </div>
+
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required min="10" max="100" placeholder="Votre âge">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Téléphone (Tel / WhatsApp)</label>
+                <input type="tel" id="tel" name="tel" required placeholder="Ex: +221 77 XXX XX XX">
+            </div>
+
+            <div class="form-group">
+                <label for="pays">Pays</label>
+                <input type="text" id="pays" name="pays" required placeholder="Ex: Sénégal">
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" name="ville" required placeholder="Ex: Dakar">
+            </div>
+
+            <div class="form-group">
+                <label for="niveau">Niveau choisi</label>
+                <select id="niveau" name="niveau" required>
+                    <option value="">Sélectionnez votre niveau</option>
+                    <option value="4eme-3eme">4ème / 3ème</option>
+                    <option value="lycee">Lycée (Seconde, Première, Terminale)</option>
+                    <option value="licence">Licence</option>
+                    <option value="master">Master</option>
+                </select>
+            </div>
+
+            <button type="submit">Valider mon inscription et procéder au paiement</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Español Express - Propulsé par Serigne Mbaye Anta CISSE. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
